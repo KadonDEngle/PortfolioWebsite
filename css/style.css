@@ -1,0 +1,12 @@
+img{
+    width:50%;
+}
+
+#footer{
+    background: #384148;
+    height:20%;
+}
+
+html, body{
+    min-height: 100%;
+}
