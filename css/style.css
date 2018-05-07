@@ -1,4 +1,9 @@
-.center {
+a{
+    color: #384148;
+    text-decoration: none;
+}
+
+.center{
     margin-right: auto;
     margin-left: auto;
     width: 50%;
@@ -13,13 +18,36 @@ img{
 
 #footer{
     background: #384148;
-    height:20%;
+    text-align: center;
 }
 
 html, body{
+    font-family: 'Merriweather', serif;
     min-height: 100%;
 }
 
 .footerIcons{
     color: white;
+    margin: 25px 25px;
 }
+
+#pageLinks{
+    padding-right: 10px;
+    padding-top: 15px;
+    float: right;
+}
+
+#nav{
+    min-height: 60px;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h4{
+    color: #666;
+    text-align: center;
+}
+
