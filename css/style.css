@@ -22,6 +22,7 @@ img{
 }
 
 html, body{
+    background:#F1F3F4;
     font-family: 'Merriweather', serif;
     min-height: 100%;
 }
@@ -31,17 +32,8 @@ html, body{
     margin: 25px 25px;
 }
 
-#pageLinks{
-    padding-right: 10px;
-    padding-top: 15px;
-    float: right;
-}
-
-#nav{
-    min-height: 60px;
-}
-
 h2{
+    font-size: 60px;
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -51,3 +43,51 @@ h4{
     text-align: center;
 }
 
+nav ul.mainNav{
+    float: right;
+}
+
+nav{
+    width: 100%;
+    min-width: 320px;
+    position: fixed;
+    top: 0;
+    padding: 0 15px;
+    z-index: 999;
+    height: 60px;
+    background: #fff;
+}
+
+nav ul{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+    height: 60px;
+    line-height: 60px;
+    overflow: hidden;
+    top: 0;
+}
+
+.btn{
+    display: inline-block;
+    width: auto;
+    background: white;
+    text-decoration: none !important;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-family: "Source Sans Pro";
+    font-weight: 700;
+    line-height: 36px;
+    font-size: 15px;
+    color: white;
+    padding: 0 18px;
+    background: #57B0FF;
+    border-radius: 18px;
+    transition: all 0.15s ease-in-out;
+}
+
+nav ul.cta{
+    float: right;
+}
