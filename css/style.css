@@ -1,5 +1,15 @@
+.navbar-light .navbar-nav .nav-link{
+    color: #333536;
+    font-weight: 700;
+}
+
 a{
-    color: #384148;
+    color: #57B0FF;
+}
+
+a:hover, 
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #007ff0;
     text-decoration: none;
 }
 
@@ -17,8 +27,10 @@ img{
 }
 
 #footer{
+    color: #fff;
     background: #384148;
     text-align: center;
+    padding: 20px 0;
 }
 
 html, body{
@@ -29,7 +41,11 @@ html, body{
 
 .footerIcons{
     color: white;
-    margin: 25px 25px;
+    padding: 25px 25px;
+}
+
+.footerIcons:hover {
+    background-color: #22272b;
 }
 
 h2{
@@ -39,6 +55,7 @@ h2{
 }
 
 h4{
+    font-size: 0.95rem;
     color: #666;
     text-align: center;
 }
@@ -58,18 +75,7 @@ nav{
     background: #fff;
 }
 
-nav ul{
-    list-style-type: none;
-    display: inline-block;
-    padding: 0px;
-    margin: 0px;
-    height: 60px;
-    line-height: 60px;
-    overflow: hidden;
-    top: 0;
-}
-
-.btn{
+.navbar-light .navbar-nav .nav-link.contactBtn{
     display: inline-block;
     width: auto;
     background: white;
@@ -88,6 +94,38 @@ nav ul{
     transition: all 0.15s ease-in-out;
 }
 
-nav ul.cta{
-    float: right;
+@media (min-width: 992px) {
+    .navbar-light .navbar-nav .nav-link.contactBtn {
+        margin-left: 20px;        
+    }
+
+}
+
+.navbar-light .navbar-nav .nav-link.contactBtn:hover{
+    background-color: #007ff0;
+}
+
+nav h1.logo {
+    margin: 3px 15px 0 0;
+    display: inline-block;
+    font-size: 0;
+    vertical-align: top;
+}
+
+nav h1.logo a {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 40px;
+    font-weight: 700;
+    background: #384148;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
 }
