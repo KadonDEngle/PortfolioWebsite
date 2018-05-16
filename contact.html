@@ -32,21 +32,21 @@
         </nav>
         <form id="contact-form">
             <label for="name-input">Name:</label>
-            <input type="text" id="name-input" placeholder="name here..." />
+            <input type="text" id="name-input" placeholder="name here..." required />
                
             <label for="email-input">Email:</label>
-            <input type="email" id="email-input" placeholder="email here..."/>
+            <input type="email" id="email-input" placeholder="email here..." required/>
                
             <label for="description-input">How can we help you?</label>
-            <textarea id="description-input" rows="3" placeholder="tell us..."></textarea>
+            <textarea id="description-input" rows="3" placeholder="tell us..." required></textarea>
             
             <button type="submit">Submit</button>
         </form>
         <script>
-                alert('Message Sent!');
                 var URL = 'https://ejyvytm3z8.execute-api.us-west-2.amazonaws.com/email123/simpleemail'
  
                 $('#contact-form').submit(function (event) {
+                    alert('Message Sent!');
                     event.preventDefault()
                  
                     var data = {
