@@ -43,6 +43,7 @@
             <button type="submit">Submit</button>
         </form>
         <script>
+                alert('Message Sent!');
                 var URL = 'https://ejyvytm3z8.execute-api.us-west-2.amazonaws.com/email123/simpleemail'
  
                 $('#contact-form').submit(function (event) {
@@ -61,7 +62,6 @@
                         contentType: 'application/json',
                         data: JSON.stringify(data),
                         success: function () {
-                        alert('Message Sent!');
                         // clear form and show a success message
                         },
                         error: function () {
