@@ -31,16 +31,19 @@
             </div>
         </nav>
         <form id="contact-form">
-            <label for="name-input">Name:</label>
-            <input type="text" id="name-input" placeholder="name here..." required />
-               
-            <label for="email-input">Email:</label>
-            <input type="email" id="email-input" placeholder="email here..." required/>
-               
-            <label for="description-input">How can we help you?</label>
-            <textarea id="description-input" rows="3" placeholder="tell us..." required></textarea>
-            
-            <button type="submit">Submit</button>
+            <div class="form-group">
+                <label for="name-input">Name:</label>
+                <input type="text" class="form-control" id="name-input" placeholder="Name Here..." required />
+            </div>
+            <div class="form-group">
+                <label for="email-input">Email:</label>
+                <input type="email" class="form-control" id="email-input" placeholder="Email Here..." required/>
+            </div>
+            <div class="form-group">
+                <label for="description-input">Questions or Comments?</label>
+                <textarea class="form-control" id="description-input" rows="3" placeholder="Tell Me..." required></textarea>
+            </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
         </form>
         <script>
                 var URL = 'https://ejyvytm3z8.execute-api.us-west-2.amazonaws.com/email123/simpleemail'
@@ -62,7 +65,7 @@
                         contentType: 'application/json',
                         data: JSON.stringify(data),
                         success: function () {
-                        // clear form and show a success message
+                        // Show a success message and clear form
                         },
                         error: function () {
                         // show an error message
