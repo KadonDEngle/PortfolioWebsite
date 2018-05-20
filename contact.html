@@ -49,7 +49,7 @@
                 var URL = 'https://ejyvytm3z8.execute-api.us-west-2.amazonaws.com/email123/simpleemail'
  
                 $('#contact-form').submit(function (event) {
-                    alert('Message Sent!');
+                    //alert('Message Sent!');
                     event.preventDefault()
                  
                     var data = {
@@ -65,7 +65,8 @@
                         contentType: 'application/json',
                         data: JSON.stringify(data),
                         success: function () {
-                        // Show a success message and clear form
+                        $('#contact-form').trigger('reset');
+                        alert('Message Sent!');
                         },
                         error: function () {
                         // show an error message
