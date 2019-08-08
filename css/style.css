@@ -35,7 +35,7 @@ img{
 
 html, body{
     background:#F1F3F4;
-    /*background-image: linear-gradient(to bottom right, );*/
+    /*background-image: linear-gradient(to bottom right, cyan, magenta );*/
     font-family: 'Merriweather', serif;
     min-height: 100%;
 }
@@ -57,7 +57,6 @@ h1{
     font-size: 120px;
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
-    text-decoration: underline;
     margin-bottom: 50px;
 }
 
