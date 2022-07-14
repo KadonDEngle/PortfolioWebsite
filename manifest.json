@@ -1,0 +1,16 @@
+{
+  "short_name": "Portfolio Site",
+  "name": "Kadon Engle Portfolio Website",
+  "author": "Kadon Engle",
+  "icons": [
+    {
+      "src": "ke.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "theme_color": "#BB4430",
+  "background_color": "#231F20"
+}
